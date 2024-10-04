@@ -124,10 +124,12 @@ main {
 .main-title {
     font-size: 48px;
     font-weight: 700;
+    margin-bottom: 40px;
 }
 
-.main-logo, .text-content {
-    flex: 1; /* Ger varje kolumn lika storlek */
+.main-logo, 
+.text-content {
+    /* flex: 1; Ger varje kolumn lika storlek */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -140,11 +142,17 @@ main {
     align-items: flex-start; 
     text-align: left;
     position: relative; /* positionerar knappen absolut */
-    padding: 10px;
+    /* padding: 10px; */
+    padding-left: 40px;
     color: black;
-    margin: 100px;
+    /* margin: 100px; */
+    line-height: 1.5;
     width: 60%;
-    flex: 1;
+    /* flex: 1; */
+  }
+
+  .text-content > h1, p {
+    margin-bottom: 20px;
   }
 
 
@@ -179,3 +187,16 @@ main {
     background-color: #006400;
 
   }
+
+  .custom-line {
+    border: none; 
+    height: 2px; 
+    background-color: #0a846e; 
+    width: 40%; 
+    margin: 50px auto; 
+  }
+
+  /* Grid */
+
+  
+  
