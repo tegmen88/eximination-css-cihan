@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    max-width: 1000px;
+    background-color: #fcf6fc;
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+    color: #0a846e;
+
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px; 
+    height: 540px; 
+    margin: 0 auto;
+}
+  
+.left-column,
+.right-column {
+    display: flex;
+    width: 50%; /* Den varje kolumn tar hälften av containerns bredd */
+    height: 100%;
+}
+
+.left-column {
+    flex-direction: column;
+    justify-content: space-between;
+}
+  
+.right-column {
+    justify-content: center; /* Centrerar bilden horisontellt */
+    align-items: center; /* Centrerar bilden vertikalt */
+    flex-direction: column;
+}
+
+.right-item {
+    flex: 1; /* Denna gör varje figure lika stor */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Täcker hela bredden av högra kolumnen */
+}
+
+.upper {
+   background-color: #9e6d52;
+}
+
+.down {
+    background-color: #0a846e;
+}
+
+.left-column img {
+  width: 100%; 
+  max-height: 100%;
+}
+
+/* NAV */
+nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    /* margin-bottom: 10px;
+    box-shadow: 0px 10px 0px 0xp #dad8da; */
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    width: 100%; 
+    padding: 0;
+    margin: 0;
+  }
+  
+  li a {
+    text-decoration: none;
+    color: #0a846e;
+    font-family: 'Inter', sans-serif;
+    font-weight:600; 
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease;
+  }
+  
+  li a:hover {
+    background-color: lightgray; 
+    color: darkgreen; 
+  }
+
+/* MAIN */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+  }
+
+.content-container {
+    max-width: 90%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.main-title {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.main-logo, .text-content {
+    flex: 1; /* Ger varje kolumn lika storlek */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: flex-start; 
+    text-align: left;
+    position: relative; /* positionerar knappen absolut */
+    padding: 10px;
+    color: black;
+    margin: 100px;
+    width: 60%;
+    flex: 1;
+  }
+
+
+.main-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0a846e;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%; 
+  }
+
+  .main-logo img {
+    width: 40%;
+    height: auto;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #0a846e;
+
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-end;
+  }
+  
+  button:hover {
+    background-color: #006400;
+
+  }
