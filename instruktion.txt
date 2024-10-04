@@ -1,0 +1,8 @@
+<main>: Definierar det huvudsakliga innehållet på sidan.
+<section>: Används för att gruppera en specifik sektion av innehåll, som en Call-to-Action.
+<article>: Används för fristående innehåll, som en artikel eller ett avsnitt som kan stå på egna ben.
+
+<main> för att indikera att detta är huvudsektionen på sidan.
+<section> för att gruppera innehåll som kan vara en call-to-action (CTA).
+<div> för att fungera som en container för knappen.
+
