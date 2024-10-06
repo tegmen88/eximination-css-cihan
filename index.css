@@ -354,6 +354,7 @@ button:hover {
     width: 280px;
   }
 
+
   .left-column-down {
     padding: 0px 0px 10px 0px;
     flex: 1;
@@ -529,6 +530,7 @@ footer {
     /* main */
     .main-title {
         font-size: 1.5rem;
+        margin-top: 40px;
     }
 
     .content-container {
@@ -561,11 +563,15 @@ footer {
         width: 90%;
       }
 
+      .additional-info, .product-info {
+        font-size: 0.7rem;
+      }
 
       /* .content layout */
       .content-layout {
         display: flex;
         flex-direction: column;
+        align-items: center;
 
         
       }
@@ -586,14 +592,55 @@ footer {
         margin-bottom: 10px;
       }
 
+      .left-column-down > .cta-button {
+        height: 50px;
+        width: 150px;
+        font-size: 0.8rem;
+        /* display: inline-block; Ser till att knappen beter sig korrekt */
+        margin-top: 30px; /* Ger lite utrymme ovanför knappen */
+        text-align: center;
+        
+      }
 
-      
+
+
+    /* circle */
+    .circle-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0; /* Hindrar Flexbox från att krympa denna container */
+    }
+    
+    /* Cirkeln */
+    .circle {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%; 
+        background-color: #0a846e;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden; 
+    }
+    
+    /* Bilden inuti cirkeln */
+    .circle img {
+        width: 50%; 
+        height: 50%; 
+    }
+    
+            
       /* footer */
       .columns {
         display: flex;
         flex-direction: column-reverse;
       }
-      
+
+      .left-column-bottom, .right-column-bottom {
+        flex: 1;
+        font-size: ;
+      }
 }
 
 
