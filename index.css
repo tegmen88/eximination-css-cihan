@@ -278,7 +278,7 @@ button:hover {
 .additional-info {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
     margin-bottom: 20px;
     padding: 10px;
 }
@@ -609,6 +609,12 @@ footer {
         text-align: center;
         
       }
+
+      .btn-remove {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
 
 

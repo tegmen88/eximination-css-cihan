@@ -1,3 +1,112 @@
-p {
-    font-size: 4rem;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 60vw; 
+    background-color: #fcf6fc;
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+    color: #0a846e;
+}
+
+
+/* nav */
+nav {
+    display: flex;
+    justify-content: center;
+    width: 100%; /* Ändrat till 100% för att täcka hela bredden */
+    height: 70px;
+    background-color: white;
+    /* max-width: 1000px; Detta tas bort eftersom maxbredd inte behövs */
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    width: 100%; 
+    padding: 0;
+    margin: 0;
+}
+  
+li a {
+    text-decoration: none;
+    color: #0a846e;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+  
+li a:hover {
+    background-color: lightgray; 
+    color: darkgreen;
+}
+
+/* header */
+
+header{
+    width: 100%;
+    /* height: 300px; */
+}
+
+.hamburger-icon {
+    display: none;
+}
+
+.header-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    background-image: url('./assets/images/handsidan.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 600px;
+}
+
+.header-img > h1 {
+    margin-top: 50px;
+    color: white;
+}
+
+
+
+
+
+@media (max-width: 900px) {
+
+    body {
+        width: 100vw; 
+        margin: 0; 
+        padding: 0;
+    }
+
+    /* nav */
+    nav {
+        display: none !important;
+    }
+
+    /* Header */
+    .hamburger-icon {
+        display: inline-block !important;
+        font-size: 2rem;
+        cursor: pointer;
+        position: absolute; 
+        top: 20px; 
+        right: 20px; 
+        z-index: 10; 
+        color: rgb(255, 255, 255);
+    }
+ 
+
 }
